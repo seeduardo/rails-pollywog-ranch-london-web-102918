@@ -47,6 +47,20 @@ class TadpolesController < ApplicationController
     end
   end
 
+  # def metamorphose
+  #   @tadpole.destroy
+  #
+  #    = Frog.new(frog_params)
+  #
+  #   respond_to do |format|
+  #     if @frog.save
+  #       format.html { redirect_to @frog, notice: 'Frog was successfully created.' }
+  #     else
+  #       format.html { render :new }
+  #     end
+  #   end
+  # end
+
   private
     def set_tadpole
       @tadpole = Tadpole.find(params[:id])
